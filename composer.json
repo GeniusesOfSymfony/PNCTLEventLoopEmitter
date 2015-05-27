@@ -1,0 +1,27 @@
+{
+    "name": "gos/pnctl-event-loop-emitter",
+    "type": "library",
+    "description": "Pnctl event emitter for event loop",
+    "keywords": ["Pnctl", "ReactPHP", "Event Loop"],
+    "homepage": "https://github.com/GeniusesOfSymfony/PnctlEventLoopEmitter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johann Saunier",
+            "email": "johann_27@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+	"evenement/evenement" : "~1.0|~2.0",
+        "react/event-loop": "~0.3.0"
+    },
+    "autoload": {
+        "psr-4": { "Gos\\Component\\PnctlEventLoopEmitter\\": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
