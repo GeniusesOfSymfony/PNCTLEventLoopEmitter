@@ -19,7 +19,7 @@ use Gos\Component\PnctlEventLoopEmitter\PnctlEmitter;
 
 $loop = Factory::create();
 
-$pnctlEmitter = new PnctlEmitter($this->loop);
+$pnctlEmitter = new PnctlEmitter($loop);
 
 $pnctlEmitter->on(SIGTERM, function () use ($loop) {
 	//do something
@@ -46,7 +46,7 @@ use React\EventLoop\Factory;
 use Gos\Component\PnctlEventLoopEmitter\PnctlEmitter;
 
 $loop = Factory::create();
-$pnctlEmitter = new PnctlEmitter($this->loop);
+$pnctlEmitter = new PnctlEmitter($loop);
 
 $pnctlEmitter->on(SIGINT, function () use ($loop) {
 	$this->logger->notice('Press CTLR+C again to stop the server');
