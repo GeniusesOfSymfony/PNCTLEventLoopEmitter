@@ -22,7 +22,10 @@ class PnctlEmitter extends EventEmitter
      */
     public function on($signo, callable $listener)
     {
-        pcntl_signal($signo, array($this, 'emit'));
+        pcntl_signal($signo, function($signo) {
+            $this->emit($signo, array($signo));
+        });
+
         parent::on($signo, $listener);
     }
 
