@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('pcntl_sigtimedwait')) {
-    function pcntl_sigtimedwait($signals, $siginfo, $sec, $nano)
+    function pcntl_sigtimedwait(array $signals, array &$siginfo = array(), $sec = 0, $nano = 0)
     {
         pcntl_signal_dispatch();
 
