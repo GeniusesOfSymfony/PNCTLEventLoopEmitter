@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.3",
-        "evenement/evenement" : "~2.0",
+        "evenement/evenement" : "~2.0|~3.0",
         "react/event-loop": "~0.4.0"
     },
     "autoload": {
