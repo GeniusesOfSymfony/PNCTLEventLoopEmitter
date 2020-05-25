@@ -1,3 +1,5 @@
+**NOTE** - This repository is no longer maintained
+
 PNCTL Event Loop Emitter
 ========================
 
